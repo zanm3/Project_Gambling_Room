@@ -82,3 +82,8 @@ input[type="text"]{
 	height: 5%;
 	display: block;
 }
+.input{
+	width: max-content;
+	height: max-content;
+	display: block;
+}
