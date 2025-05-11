@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-image: url("../img/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#title{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-self: center;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    border: none;
+    grid-row: 1;
+    grid-column: 2;
+    cursor: pointer;
+}
+#titletext{
+    color: red;
+    transition: ease 0.6s;
+    font-family: 'Times New Roman', Times, serif;
+}
+#titletext:hover{
+    transform: scale(1.25);
+    color: black;
+}
+#playerFormEna{
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(245,245,245,0.6);
+	display: flex;
+	justify-content: center;
+	grid-row: 2;
+	grid-column: 1;
+	margin-right: 10%;
+	justify-self: center;
+	padding: 2%;
+}
+#playerFormDva{
+	width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(245,245,245,0.6);
+	grid-row: 2;
+	grid-column: 2;
+	margin-right: 10%;
+	justify-self: center;
+	padding: 2%;
+}
+#playerFormTri{
+	width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(245,245,245,0.6);
+	grid-row: 2;
+	grid-column: 3;
+	justify-self: center;
+	padding: 2%;
+}
+span{
+	display: block;
+	width: max-content;
+	height: max-content;
+}
+input[type="text"]{
+	height: 5%;
+	display: block;
+}
+.input{
+	width: max-content;
+	height: max-content;
+	display: block;
+}
