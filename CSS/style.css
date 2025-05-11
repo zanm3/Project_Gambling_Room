@@ -7,7 +7,7 @@ body, html{
     height: 100vh;
 }
 body{
-    background-image: url("../img/background.webp");
+    background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -21,7 +21,6 @@ body{
     justify-self: center;
     position: relative;
     top: 20%;
-    text-align: center;
     border: none;
     grid-row: 1;
     grid-column: 2;
@@ -30,60 +29,73 @@ body{
 #titletext{
     color: red;
     transition: ease 0.6s;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
 }
 #titletext:hover{
     transform: scale(1.25);
     color: black;
 }
 #playerFormEna{
-    width: 50%;
-    height: 100%;
+    width: 70%;
+    height: 150%;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 	grid-row: 2;
 	grid-column: 1;
 	margin-right: 10%;
 	justify-self: center;
+    position: relative;
+    bottom: 15%;
+    box-shadow: 10px 10px 15px 5px;
 	padding: 2%;
 }
 #playerFormDva{
-	width: 50%;
-    height: 100%;
+	width: 70%;
+    height: 150%;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
 	grid-row: 2;
 	grid-column: 2;
 	margin-right: 10%;
 	justify-self: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 15%;
+    box-shadow: 10px 10px 15px 5px;
 	padding: 2%;
 }
 #playerFormTri{
-	width: 50%;
-    height: 100%;
+	width: 70%;
+    height: 150%;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
 	grid-row: 2;
 	grid-column: 3;
 	justify-self: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 15%;
+    box-shadow: 10px 10px 15px 5px;
 	padding: 2%;
 }
 span{
 	display: block;
-	width: max-content;
-	height: max-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 input[type="text"]{
-	height: 5%;
-	display: block;
-}
-.input{
-	width: max-content;
-	height: max-content;
-	display: block;
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    height: 5%;
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
