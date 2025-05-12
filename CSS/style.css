@@ -110,7 +110,7 @@ input[type="text"]{
     margin-bottom: 5%;
     padding: 3%;
 }
-#add{
+#addEna{
     width: 10%;
     height: 10%;
     right: 30%;
@@ -118,6 +118,28 @@ input[type="text"]{
     top: 80%;
     right: 45%;
     background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#addDva{
+    width: 10%;
+    height: 10%;
+    right: 30%;
+    position: absolute;
+    top: 80%;
+    right: 45%;
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub{
+    width: 10%;
+    height: 10%;
+    right: 40%;
+    position: absolute;
+    top: 80%;
+    right: 45%;
+    background-image: url("../img/minus.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
