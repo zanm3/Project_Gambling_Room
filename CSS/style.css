@@ -13,6 +13,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    overflow: hidden !important;
 }
 #title{
     width: max-content;
@@ -138,5 +139,26 @@ input[type="text"]{
     width: 50px;
     height: 50px;
     margin-left: 5%;
+    cursor: pointer;
+}
+#igraj{
+    width: max-content;
+    height: max-content;
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    justify-self: center;
+    align-self: flex-end;
+    position: relative;
+    bottom: 7%;
+}
+#gumb{
+    width: 80px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    background-color: lightcoral;
+    box-shadow: 2px 12px 5px 2px;
     cursor: pointer;
 }

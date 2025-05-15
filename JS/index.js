@@ -31,3 +31,10 @@ document.getElementById("sub").addEventListener("click", function(){
     if(playersSub == 0)
         playersAdd = 0;
 });
+document.getElementById("titletext").addEventListener("click", () => {
+    Swal.fire({
+        icon: 'info',
+        title: 'O strani',
+        html: 'Razvijalec: Žan Markuža<br>Razred: 4. RB<br>Mentor: dr. Boštjan Vouk'
+    });
+});
