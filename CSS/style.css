@@ -39,7 +39,7 @@ body{
 }
 #playerFormEna{
     width: 70%;
-    height: 150%;
+    height: 80%;
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
@@ -52,13 +52,13 @@ body{
 	margin-right: 10%;
 	justify-self: center;
     position: relative;
-    bottom: 15%;
+    bottom: 30%;
     box-shadow: 10px 10px 15px 5px;
-	padding: 2%;
+	padding: 15px;
 }
 #playerFormDva{
 	width: 70%;
-    height: 150%;
+    height: 80%;
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
@@ -68,13 +68,13 @@ body{
 	justify-self: center;
     align-items: flex-start;
     position: relative;
-    bottom: 15%;
+    bottom: 30%;
     box-shadow: 10px 10px 15px 5px;
-	padding: 2%;
+	padding: 15px;
 }
 #playerFormTri{
 	width: 70%;
-    height: 150%;
+    height: 80%;
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
@@ -83,9 +83,24 @@ body{
 	justify-self: center;
     align-items: flex-start;
     position: relative;
-    bottom: 15%;
+    bottom: 30%;
     box-shadow: 10px 10px 15px 5px;
-	padding: 2%;
+	padding: 15px;
+}
+#gameForm{
+    width: 60%;
+    height: 45%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(245,245,245,0.6);
+	grid-row: 2;
+	grid-column: 2;
+	justify-self: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: -90%;
+    box-shadow: 10px 10px 15px 5px;
+	padding: 15px;
 }
 span{
 	display: block;
@@ -94,8 +109,15 @@ span{
 input[type="text"]{
     display: block;
     border: 1px solid black;
-    border-radius: 7px;
-    height: 6%;
+    height: 10%;
+    margin-top: 1%;
+    margin-bottom: 6%;
+    background-color: rgba(245,245,245,0.6);
+}
+input[type="number"]{
+    display: block;
+    border: 1px solid black;
+    height: 20%;
     margin-top: 1%;
     margin-bottom: 6%;
     background-color: rgba(245,245,245,0.6);
@@ -120,7 +142,9 @@ input[type="text"]{
     justify-self: center;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    align-self: flex-start;
+    position: relative;
+    top: 19%;
 }
 #add{
     background-image: url("../img/plus.png");
