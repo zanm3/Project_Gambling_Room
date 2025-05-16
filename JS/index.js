@@ -13,22 +13,22 @@ secondForm.style.display = "none";
 thirdForm.style.display = "none";
 
 let playersAdd = 0;
-document.getElementById("add").addEventListener("click", function(){
-    if(playersAdd < players.length){
+document.getElementById("add").addEventListener("click", function () {
+    if (playersAdd < players.length) {
         players[playersAdd].style.display = "block";
         playersAdd += 1;
     }
-    if(playersAdd == players.length)
+    if (playersAdd == players.length)
         playersSub = players.length - 1;
 });
 
 let playersSub = 2;
-document.getElementById("sub").addEventListener("click", function(){
-    if(playersSub >= 0){
+document.getElementById("sub").addEventListener("click", function () {
+    if (playersSub >= 0) {
         players[playersSub].style.display = "none";
         playersSub--;
     }
-    if(playersSub == 0)
+    if (playersSub == 0)
         playersAdd = 0;
 });
 document.getElementById("titletext").addEventListener("click", () => {
@@ -37,4 +37,17 @@ document.getElementById("titletext").addEventListener("click", () => {
         title: 'O strani',
         html: 'Razvijalec: Žan Markuža<br>Razred: 4. RB<br>Mentor: dr. Boštjan Vouk'
     });
+});
+
+document.getElementById("gumb").addEventListener("click", () => {
+
+    const numberInputValue = document.querySelector('input[type="number"]').value
+    const textInputValue = document.querySelector('input[type="text"]').value;
+    if(textInputValue == "" || numberInputValue == "")
+        Swal.fire({
+            icon: 'error',
+            title: 'Napaka',
+            html: 'Vnos podatkov je obvezen!'
+        });
+        return;
 });
