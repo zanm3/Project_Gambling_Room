@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body, html{
+body, html, form{
     width: 100vw;
     height: 100vh;
 }
@@ -30,7 +30,7 @@ body{
 #titletext{
     color: red;
     transition: ease 0.6s;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
 }
 #titletext:hover{
@@ -40,7 +40,7 @@ body{
 #playerFormEna{
     width: 70%;
     height: 80%;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
 	display: flex;
@@ -59,7 +59,7 @@ body{
 #playerFormDva{
 	width: 70%;
     height: 80%;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
 	grid-row: 2;
@@ -93,12 +93,13 @@ body{
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgba(245,245,245,0.6);
-	grid-row: 2;
-	grid-column: 2;
+	grid-row: 3;
+	grid-column: 1;
 	justify-self: center;
     align-items: flex-start;
     position: relative;
-    bottom: -90%;
+    bottom: -10%;
+    right: 5%;
     box-shadow: 10px 10px 15px 5px;
 	padding: 15px;
 }
@@ -112,8 +113,14 @@ input[type="text"]{
     height: 10%;
     margin-top: 1%;
     margin-bottom: 6%;
-    background-color: rgba(245,245,245,0.6);
+    background-color: rgba(245,245,245,1);
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
+input[type="text"]:hover{
+    background-color: rgb(192, 192, 192);
+}
+
 input[type="number"]{
     display: block;
     border: 1px solid black;
