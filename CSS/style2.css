@@ -1,0 +1,155 @@
+/* RESET & LAYOUT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    padding: 20px;
+}
+
+/* TITLE SECTION */
+/* TITLE SECTION */
+#title {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: start;
+    text-align: center; /* ensures the h1 inside is centered */
+}
+
+#titletext {
+    font-size: xx-large;
+    color: red;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 5%;
+    text-shadow: 1px 1px 2px #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#titletext:hover {
+    color: black;
+    transform: scale(1.25);
+}
+
+
+/* PLAYER RESULTS */
+.player-result {
+    grid-column: 2;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem auto; /* small, even spacing */
+    width: 90%;
+    box-shadow: 10px 10px 15px 5px;
+    height: max-content;
+}
+
+.player-result h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+}
+
+/* DICE GRID */
+.dice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.dice-grid img {
+    width: 40px;
+    height: 40px;
+    image-rendering: crisp-edges;
+}
+
+/* BUTTON */
+#playNextGameBtn {
+    width: 35%;
+    height: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f08080;
+    box-shadow: 2px 12px 5px 2px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+#playNextGameBtn:hover {
+   background-color: #b44f4f;
+}
+
+/* FINAL TOTALS */
+#finalTotals {
+    grid-column: 3;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    box-shadow: 10px 10px 15px 5px;
+    height: max-content;
+}
+
+#finalTotals h2 {
+    margin-bottom: 15px;
+    color: #000;
+}
+
+p{
+    margin-bottom: 4%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 10px;
+    }
+
+    #title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .player-result, #finalTotals {
+        width: 95%;
+    }
+}

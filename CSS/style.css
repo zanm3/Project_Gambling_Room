@@ -51,7 +51,7 @@ body {
 #playerFormEna {
     width: 70%;
     height: 80%;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 15px;
     background-color: rgba(245, 245, 245, 0.6);
     display: flex;
@@ -71,7 +71,7 @@ body {
 #playerFormDva {
     width: 70%;
     height: 80%;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 15px;
     background-color: rgba(245, 245, 245, 0.6);
     grid-row: 2;

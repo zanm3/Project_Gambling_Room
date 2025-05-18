@@ -36,20 +36,37 @@ document.getElementById("titletext").addEventListener("click", () => {
         html: 'Razvijalec: Žan Markuža<br>Razred: 4. RB<br>Mentor: dr. Boštjan Vouk'
     });
 });
+document.getElementById("forma").addEventListener("submit", async function(e) {
+    e.preventDefault(); // always prevent default first
 
-document.getElementById("gumb").addEventListener("click", () => {
-
-    const numberInputValue = document.querySelector('input[type="number"]').value
+    const numberInputValue = document.querySelector('input[type="number"]').value;
     const textInputValue = document.querySelector('input[type="text"]').value;
-    if(textInputValue == "" || numberInputValue == ""){
-        Swal.fire({
+
+    if(textInputValue.trim() === "" || numberInputValue.trim() === ""){
+        await Swal.fire({
             icon: 'error',
             title: 'Napaka',
             html: 'Vnos podatkov je obvezen!'
         });
-        return;
+        return; // stop submission
+    }
+
+    // if valid, ask user to confirm to submit
+    const result = await Swal.fire({
+        icon: 'question',
+        text: 'Ali želite nadaljevati?',
+        showCancelButton: true,
+        confirmButtonText: 'Da',
+        cancelButtonText: 'Ne'
+    });
+
+    if(result.isConfirmed){
+        // submit form programmatically
+        this.submit();
     }
 });
+
+
 const numberInput = document.querySelector('input[type="number"]');
 
 numberInput.addEventListener("input", () => {
