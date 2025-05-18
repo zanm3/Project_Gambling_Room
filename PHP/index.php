@@ -1,3 +1,7 @@
+<?php
+session_start()
+?>
+
 <!DOCTYPE html>
 <html lang="sl-SI">
 
@@ -8,7 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Gambling Room</title>
 </head>
-    <body>
+
+<body>
+    <form id="forma" method="post">
         <section id="title">
             <h1 id="titletext">Gambling Room</h1>
         </section>
@@ -46,6 +52,8 @@
         <section id="igraj">
             <button type="submit" title="Igraj" id="gumb">Igraj</button>
         </section>
-        <script src="JS/index.js"></script>
-    </body>
+    </form>
+    <script src="JS/index.js"></script>
+</body>
+
 </html>
